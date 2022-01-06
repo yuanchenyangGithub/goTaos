@@ -1,0 +1,20 @@
+#config-dev.yml
+appname: taos-prod
+
+taosDB:
+  hostName: iZwz984m
+  serverPort: 6030
+  user: root
+  password: taos
+  dbName: devDB
+
+kafkaSet:
+  kafkaHost:
+    - 192.168.0.13:19092
+    - 192.168.0.13:19093
+    - 192.168.0.13:19094
+  kafkaPort: 12181
+  kafkaTopicHBase:
+    - diSuTestProducer-HBase
+  kafkaTopicLocation:
+    - diSuTestProducer-location
